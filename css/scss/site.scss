@@ -263,6 +263,7 @@ SECTION TEKST + LINKEN + FOTO'S
                 max-width: 100%;
                 height: auto;
                 margin: 0 auto;
+                @include border-radius (31px);
                 @include transition (1s);
             }
             figure {
