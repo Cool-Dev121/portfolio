@@ -1,0 +1,169 @@
+		@import "font";
+		/*variabelen*/
+		
+		$black:black;
+		$white:white;
+		$green:#32fa18;
+		$font:ceiluxfont,
+		Arial,
+		sans-serif;
+		/*mixins*/
+		
+		@mixin floating($width,$float:left ) {
+			float: $float;
+			width: $width;
+		}
+		/*algemene opmaak*/
+		
+		* {
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font {
+				family: $font;
+				size: 1em;
+			}
+			line-height: 1.5;
+		}
+		
+		h1 {
+			font-size: 2.5em;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0.4em;
+		}
+		
+		h2 {
+			font-size: 2em;
+			margin: 0.4em;
+		}
+		
+		p {
+			font-size: 1.25em;
+			padding: 0.8em;
+		}
+		/*header*/
+		
+		header img {
+			display: block;
+			margin: 1em auto; //gecentreerd
+		}
+		/*navigatie*/
+		
+		nav {
+			#menu-icon {
+				display: block;
+				color: white;
+				background: url(../images/menu-icon.png) no-repeat right, black;
+				padding: 1.5em;
+			}
+			ul {
+				display: none;
+				background-color: $black;
+			}
+			&:hover ul {
+				display: block;
+				list-style-type: none;
+			}
+			a {
+				font-size: .8em;
+				color: $white;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover {
+					font-weight: bold;
+				}
+				&.active {
+					color: $green;
+				}
+			}
+		}
+		/*footer*/
+		
+		footer {
+			background-color: $black;
+			color: $white;
+			padding: 1em;
+			text-align: center;
+		}
+		/*images*/
+		
+		figure {
+			position: relative;
+			img {
+				padding: 0.8em;
+				width: 100%;
+			}
+			figcaption {
+				position: absolute;
+				top: 80%;
+				width: 100%;
+				text-align: center;
+				color: $white;
+				font: {
+					size: 2.5em;
+					weight: bold;
+				}
+				text-transform: uppercase;
+				line-height: normal;
+			}
+		}
+		/*layout nieuws*/
+		
+		section article {
+			overflow: hidden;
+			margin-bottom: 1em;
+			img {
+				@include floating(30%);
+				padding: 0.8em;
+			}
+		}
+		
+		@media screen and (min-width: 481px) {
+			figure {
+				@include floating(50%);
+			}
+		}
+		
+		@media screen and (min-width: 769px) {
+			header,
+			aside,
+			section,
+			footer p {
+				max-width: 960px;
+				margin: 0 auto;
+			}
+			header {
+				overflow: hidden;
+				img {
+					@include floating($width:220px);
+					padding-left: 0.8em;
+				}
+			}
+			nav {
+				display: inline-block;
+				float: right;
+				margin-top: 1.5%;
+				#menu-icon {
+					display: none;
+				}
+				ul {
+					display: block;
+					background-color: $white;
+					li {
+						font-size: 1.3em;
+						display: inline-block;
+						a {
+							padding: 10px;
+							font-size: 1.3em;
+							color: $black;
+						}
+					}
+				}
+			}
+			section {
+				clear: both;
+			}
+		}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vul bestellingsformulier in!</title>
+</head>
+
+<body>
+    <p>Vul onderstaand formulier in:</p>
+    <form action="mailto:stefaan.decock@hogent.be?subject=Pizza_bestelling" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Bestelling</legend>
+            <p>
+                <label for="naam">Naam &amp; Voornaam:
+                    <br />
+                    <input type="text" name="naam" id="naam" placeholder="Naam Voornaam" required />
+                </label>
+            </p>
+            <p>
+                <label for="wachtwoord">Wachtwoord:
+                    <br>
+                    <input type="password" name="wachtwoord" id="wachtwoord" required />
+                </label>
+            </p>
+            <p>
+                <label for="pizza">Pizza:
+                    <br />
+                    <select name="pizza" id="pizza" required>
+                        <option value="napolitano">Napolitano</option>
+                        <option value="4fromaggi">Quatro fromaggi</option>
+                        <option value="mozzarello" selected>Mozarello</option>
+                        <option value="speciale">Speciale</option>
+                        <option value="bolognese">Bolognese</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="aantal">Aantal:</label>
+                <br />
+                <input type="number" name="aantal" id="aantal" min="1" max="5" required />
+            </p>
+            <p>
+                <label for="datum">Datum:</label>
+                <br />
+                <input type="date" name="datum" id="datum" required />
+            </p>
+            <p>Uur:
+                <br />
+                <label for="lev16">16-18u
+                    <input type="radio" name="levering" id="lev16" value="1618" required />
+                </label>
+                <label for="lev18">18-20u
+                    <input type="radio" name="levering" id="lev18" value="1820" checked required />
+                </label>
+                <label for="lev20">20-22u
+                    <input type="radio" name="levering" id="lev20" value="2022" required />
+                </label>
+            </p>
+            <p>
+                <label for="extra">Extra informatie:
+                    <br />
+                    <textarea name="extra" id="extra"></textarea>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Bestel" />
+            </p>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

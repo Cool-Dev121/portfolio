@@ -1,0 +1,20 @@
+#wrapper {
+    font-family: "Verdana" sans-serif;
+    width: 90%;
+    height: 640px;
+    background-color: chocolate;
+}
+
+header {
+    background-color: bisque;
+    width: 75%;
+}
+
+ul li {
+    background-color: brown;
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    width: 150px;
+    height: 2em;
+}

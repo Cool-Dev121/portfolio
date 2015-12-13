@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Werken met CSS</title>
+    <link rel="stylesheet" href="css/oefening8.css" />
+
+</head>
+
+<body>
+    <h1>Tekst en kleur met CSS</h1>
+    <p class="initiaal">In deze pagina zie je enkele mogelijkheden van CSS.</p>
+    <p>Het basislettertype is Arial, indien niet beschikbaar is er Helvetica of een algemeen schreefloos voorzien.Verder zie je ook enkele toepassingen van kleuren op diverse elementen. De hyperlink tenslotte ziet er anders uit afhankelijk van zijn &quot;toestand&quot;.</p>
+    <p>Link naar <a href="https://www.hogent.be/" target="_blank">HoGent</a></p>
+    <h1>Formulier</h1>
+    <p>Vul onderstaand formulier in:</p>
+    <form action="mailto:mijnnaam@student.hogent.be?subject=Pizza bestelling" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Bestelling</legend>
+            <p>
+                <label for="naam">Naam &amp; Voornaam:</label>
+                <br />
+                <input type="text" name="naam" id="naam" placeholder="Naam Voornaam" required />
+
+            </p>
+            <p>
+                <label for="wachtwoord">Wachtwoord:</label>
+                <br />
+                <input type="password" name="wachtwoord" id="wachtwoord" required />
+
+            </p>
+            <p>
+                <label for="pizza">Pizza:</label>
+                <br />
+                <select name="pizza" id="pizza" required multiple>
+                    <option value="napolitano">Napolitano</option>
+                    <option value="4fromaggi">Quatro fromaggi</option>
+                    <option value="mozzarello" selected>Mozarello</option>
+                    <option value="speciale">Speciale</option>
+                    <option value="bolognese">Bolognese</option>
+                </select>
+
+            </p>
+            <p>
+                <label for="aantal">Aantal:</label>
+                <br />
+                <input type="number" name="aantal" id="aantal" min="1" max="5" required />
+            </p>
+            <p>
+                <label for="datum">Datum:</label>
+                <br />
+                <input type="date" name="datum" id="datum" required />
+            </p>
+            <p>Uur:
+                <br />
+                <label for="lev16">16-18u
+                    <input type="radio" name="levering" id="lev16" value="1618" required />
+                </label>
+                <label for="lev18">18-20u
+                    <input type="radio" name="levering" id="lev18" value="1820" checked required />
+                </label>
+                <label for="lev20">20-22u
+                    <input type="radio" name="levering" id="lev20" value="2022" required />
+                </label>
+            </p>
+            <p>
+                <label for="extra">Extra informatie:
+                    <br />
+                    <textarea name="extra" id="extra"></textarea>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Bestel" />
+            </p>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

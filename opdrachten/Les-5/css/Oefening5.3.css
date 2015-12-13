@@ -1,0 +1,33 @@
+#wrapper {
+    background-color: #abcdef;
+    width: 600px;
+    height: 1600px;
+    margin: 0px auto;
+}
+
+div#b1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+div#b2 {
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+div#b3 {
+    height: 200px;
+    width: 200px;
+    background-color: dimgrey;
+    position: fixed;
+    top: 1.2em;
+    left: 1.2em;
+}

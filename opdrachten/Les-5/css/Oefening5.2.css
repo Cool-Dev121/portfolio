@@ -1,0 +1,62 @@
+#wrapper {
+    font-family: "Verdana" sans-serif;
+    background-color: chocolate;
+}
+
+#a1 {
+    background-color: antiquewhite;
+}
+
+#a2 {
+    background-color: burlywood;
+}
+
+#a3 {
+    background-color: darkgray;
+    border: 2px dotted red;
+}
+
+#a4 {
+    background-color: aqua;
+}
+
+article {
+    padding: 1px;
+    margin: 0;
+}
+
+#a1 p {
+    padding: 1.5em 2em;
+}
+
+#a2 h1 {
+    width: 150px;
+    margin: 2px auto;
+}
+
+#a2 p {
+    padding-left: 1%;
+}
+
+#a3 h1 {
+    width: 150px;
+    margin-left: 25%;
+}
+
+#a3 p {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+#a4 {
+    height: 150px;
+}
+
+#a4 h1 {
+    padding-top: 70px;
+}
+
+#a4 p {
+    margin-top: -100px;
+}

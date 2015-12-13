@@ -1,0 +1,102 @@
+body {
+    background-color: #ececec;
+    color: #4b4a4a;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 15px;
+    background-color: #fff;
+}
+
+header {
+    margin: 20px;
+}
+
+header > aside {
+    display: none;
+}
+
+.logo {
+    display: block;
+}
+
+h1 {
+    color: #004990;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 15px 0 15px 0;
+}
+
+article {
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+article .garage {
+    float: right;
+    margin-left: 5px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+}
+
+figure {
+    margin-bottom: 25px;
+}
+
+figure > img {
+    max-width: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 5px 0 0 0;
+    color: #004990;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #004990;
+    padding: .1em;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+    clear: both;
+}
+
+@media (min-width: 990px) {
+    header > aside {
+        display: block;
+        float: right;
+        width: 250px;
+        padding-left: 10px;
+        border-left: 0px solid white;
+    }
+    .logo {
+        float: left;
+    }
+    header {
+        overflow: auto;
+    }
+    section {
+        width: 75%;
+        float: left;
+        margin-right: 1em;
+    }
+    aside {
+        float: left;
+        width: 20%;
+        border-left: 1px grey solid;
+        padding-left: 1em;
+    }
+    figure {
+        display: inline-block;
+        width: 30%;
+    }
+    figure > img {
+        width: 90%;
+    }
+}

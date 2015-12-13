@@ -1,0 +1,459 @@
+/*Algemene opmaak voor mobile (<481px)*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Titel';
+    src: url('../fonts/basictitlefont.ttf');
+}
+
+header,
+section,
+article,
+footer {
+    box-sizing: border-box;
+    padding-left: 0.5em;
+}
+
+body {
+    display: block;
+    width: 100%;
+    font-family: Titel, Verdana, Arial, sans-serif;
+    font-size: 1.2em;
+    background-color: #F4F4F4;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+}
+
+.wrapper #headerimg {
+    display: none;
+}
+
+header {
+    background-color: #F05C38;
+    padding: .5em;
+    text-align: right;
+    width: 100%;
+    height: 100%
+}
+
+
+/* uitklapmenu - icon */
+
+.nav ul {
+    display: none;
+    background-color: #F05C38;
+    list-style-type: none;
+}
+
+.nav:hover ul {
+    display: block;
+}
+
+.nav li a {
+    display: block;
+    padding: .5em .8em;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.nav li a:hover {
+    color: #4A4037;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+}
+
+.nav li a.current {
+    color: #4A4037;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    cursor: default;
+}
+
+
+/* einde menu */
+
+section {
+    padding: 1em;
+}
+
+section p {
+    font-size: 1em;
+    font-family: Roboto;
+    color: black;
+    padding: 3%;
+    line-height: 1.5em;
+}
+
+section #ik {
+    margin: 2%;
+}
+
+footer {
+    background-color: #F05C38;
+    color: white;
+    font-size: .4em;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#naam,
+#email,
+#telefoon,
+#onderwerp,
+#bericht {
+    display: block;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-size: 100%;
+    font-family: 'Roboto', 'Calibri Light';
+    border-color: #F05C38;
+    padding: 1%;
+    width: 70%;
+}
+
+#verzend {
+    display: block;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-size: 100%;
+    font-family: Titel;
+    border-color: #F05C38;
+    padding: 1%;
+}
+
+.naam,
+.email,
+.telefoon,
+.onderwerp,
+.bericht,
+#verzend {
+    padding: 1.5%;
+    font-size: 80%;
+}
+
+#bericht {
+    width: 70%;
+    height: 10em;
+}
+
+#contact {
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+/*      ACCORDEON    */
+
+.cv p,
+.cv ul li i:before,
+.cv ul li i:after {
+    transition: all 0.25s ease-in-out;
+}
+
+.flipIn,
+.cv h1,
+.cv ul li {
+    animation: flipdown 0.5s ease both;
+}
+
+.cv h1 {
+    font-family: Roboto, Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+    padding: %;
+    text-align: left;
+}
+
+.cv > h1 {
+    font-family: Titel, Verdana, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.cv p {
+    font-family: Roboto, Verdana, Arial, sans-serif;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+    margin-top: 14px;
+    z-index: 2;
+}
+
+.cv ul {
+    list-style: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+.cv ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-top: 1px dotted #dce7eb;
+}
+
+.cv ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.cv ul li i:before,
+.cv ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #F05C38;
+    width: 3px;
+    height: 9px;
+}
+
+ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.cv ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.cv ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.cv ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+.cv ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.cv ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+
+/*      EINDE ACCORDEON     */
+
+@media screen and (min-width: 755px) {
+    body {
+        display: block;
+        width: 100%;
+        margin: auto;
+        font-family: Titel;
+        font-size: 125%;
+        background-color: #4A4037;
+    }
+    .wrapper {
+        background-color: #F4F4F4;
+        border-radius: 5px;
+    }
+    .wrapper #headerimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .nav .fa {
+        display: block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 2em;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .nav ul {
+        display: none;
+        background-color: #F05C38;
+        list-style-type: none;
+    }
+    .fa:hover ul {
+        display: block;
+        padding: 0 1em;
+        margin: 0;
+    }
+    .nav .fa li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        font-family: Titel, Verdana, Arial, sans-serif;
+        font-size: 0.6em;
+    }
+    .nav .fa li a:hover {
+        color: #4A4037;
+        background-color: #F4F4F4;
+        border-radius: 5px;
+    }
+    .nav .fa li a.current {
+        color: #4A4037;
+        background-color: #F4F4F4;
+        border-radius: 5px;
+        cursor: default;
+    }
+    #email,
+    #telefoon,
+    #onderwerp,
+    #bericht {
+        display: block;
+        border-radius: 5px;
+        line-height: 1.5;
+        font-size: 100%;
+        font-family: 'Roboto', 'Calibri Light';
+        border-color: #F05C38;
+        padding: 1%;
+        margin: 0;
+        width: 100%;
+    }
+    #verzend {
+        display: block;
+        border-radius: 5px;
+        line-height: 1.5;
+        font-size: 100%;
+        font-family: Titel;
+        border-color: #F05C38;
+        padding: 1%;
+        margin-left: 13%;
+    }
+    .naam,
+    .email,
+    .telefoon,
+    .onderwerp,
+    .bericht {
+        padding: 1.5%;
+        font-size: 80%;
+        width: 70%;
+        margin: auto;
+    }
+    #bericht {
+        width: 100%;
+        height: 9em;
+    }
+}
+
+@media screen and (min-width:992px) {
+    body {
+        display: block;
+        width: 80%;
+        margin: auto;
+        font-family: Titel;
+        font-size: 1em;
+        background-color: #4A4037;
+    }
+    .wrapper #headerimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .wrapper {
+        position: relative;
+        margin: auto;
+        background-color: #F4F4F4;
+        border-radius: 5px;
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav ul {
+        display: block;
+    }
+    .nav li {
+        display: inline-block;
+        padding: 0.2em;
+        font-size: 200%;
+        border: none;
+        margin: 0;
+    }
+    .fa-navicon:before,
+    .fa-reorder:before,
+    .fa-bars:before {
+        display: none;
+    }
+    .home,
+    .contact,
+    .ik,
+    .hobby,
+    .cv,
+    .portfolio,
+    .talent {
+        font-family: Titel;
+        font-size: 200%;
+        padding-left: 10%;
+        padding-right: 10%;
+        clear: both;
+    }
+    #naam,
+    #email,
+    #telefoon,
+    #onderwerp,
+    #bericht {
+        display: block;
+        border-radius: 5px;
+        line-height: 1.5;
+        font-size: 100%;
+        font-family: 'Roboto', 'Calibri Light';
+        border-color: #F05C38;
+        padding: 1%;
+        width: 70%;
+    }
+    #verzend {
+        display: block;
+        border-radius: 5px;
+        line-height: 1.5;
+        font-size: 100%;
+        font-family: Titel;
+        border-color: #F05C38;
+        padding: 1%;
+    }
+    .naam,
+    .email,
+    .telefoon,
+    .onderwerp,
+    .bericht,
+    #verzend {
+        padding: 1.5%;
+        font-size: 70%;
+    }
+    #bericht {
+        width: 70%;
+        height: 10em;
+    }
+    section p {
+        font-size: 80%;
+    }
+    #ik {
+        border-radius: 10px;
+    }
+    footer {
+        background-color: #F05C38;
+        color: white;
+        font-size: 80%;
+        padding: 1%;
+        border-radius: 5px;
+    }
+    #contact {
+        margin: auto;
+    }
+}

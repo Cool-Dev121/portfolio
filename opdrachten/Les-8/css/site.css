@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'ceiluxfont';
+  src: url("../fonts/ceilux_std.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ceiluxfont';
+  src: url("../fonts/ceilux_bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+/*variabelen*/
+/*mixins*/
+/*algemene opmaak*/
+/* line 18, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 23, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+body {
+  line-height: 1.5; }
+  /* line 24, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  body font {
+    family: ceiluxfont, Arial, sans-serif;
+    size: 1em; }
+
+/* line 31, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0.4em; }
+
+/* line 38, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+h2 {
+  font-size: 2em;
+  margin: 0.4em; }
+
+/* line 43, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+p {
+  font-size: 1.25em;
+  padding: 0.8em; }
+
+/*header*/
+/* line 49, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+header img {
+  display: block;
+  margin: 1em auto; }
+
+/*navigatie*/
+/* line 56, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+nav #menu-icon {
+  display: block;
+  color: white;
+  background: url(../images/menu-icon.png) no-repeat right, black;
+  padding: 1.5em; }
+
+/* line 62, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+nav ul {
+  display: none;
+  background-color: black; }
+
+/* line 66, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+nav:hover ul {
+  display: block;
+  list-style-type: none; }
+
+/* line 70, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+nav a {
+  font-size: .8em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+  /* line 75, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  nav a:hover {
+    font-weight: bold; }
+  /* line 78, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  nav a.active {
+    color: #32fa18; }
+
+/*footer*/
+/* line 85, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+footer {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center; }
+
+/*images*/
+/* line 93, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+figure {
+  position: relative; }
+  /* line 95, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  figure img {
+    padding: 0.8em;
+    width: 100%; }
+  /* line 99, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  figure figcaption {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal; }
+
+/*layout nieuws*/
+/* line 115, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+section article {
+  overflow: hidden;
+  margin-bottom: 1em; }
+  /* line 118, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  section article img {
+    float: left;
+    width: 30%;
+    padding: 0.8em; }
+
+@media screen and (min-width: 481px) {
+  /* line 125, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  figure {
+    float: left;
+    width: 50%; } }
+
+@media screen and (min-width: 769px) {
+  /* line 134, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  header,
+  aside,
+  section,
+  footer p {
+    max-width: 960px;
+    margin: 0 auto; }
+  /* line 138, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  header {
+    overflow: hidden; }
+    /* line 140, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+    header img {
+      float: left;
+      width: 220px;
+      padding-left: 0.8em; }
+  /* line 145, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  nav {
+    display: inline-block;
+    float: right;
+    margin-top: 1.5%; }
+    /* line 149, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+    nav #menu-icon {
+      display: none; }
+    /* line 152, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+    nav ul {
+      display: block;
+      background-color: white; }
+      /* line 155, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+      nav ul li {
+        font-size: 1.3em;
+        display: inline-block; }
+        /* line 158, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+        nav ul li a {
+          padding: 10px;
+          font-size: 1.3em;
+          color: black; }
+  /* line 166, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/opdrachten/Les-8/css/site.scss */
+  section {
+    clear: both; } }
+
+/*# sourceMappingURL=site.css.map */

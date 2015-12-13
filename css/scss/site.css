@@ -1,0 +1,698 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto/Roboto-Thin.ttf"); }
+
+@font-face {
+  font-family: 'titel';
+  src: url("../../fonts/OpenSans-CondLight.ttf"); }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../../fonts/FontAwesome.otf"); }
+
+/* BODY */
+/* line 7, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px; }
+
+/* line 13, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+body {
+  display: block;
+  width: 100%;
+  font-family: "titel", Verdana, Arial, sans-serif;
+  font-size: 0.9em;
+  background-color: #F4F4F4; }
+  @media screen and (min-width: 755px) {
+    /* line 13, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    body {
+      display: block;
+      width: 100%;
+      margin: auto;
+      font-family: "titel", Verdana, Arial, sans-serif;
+      font-size: 100%;
+      background-color: #4A4037; } }
+  @media screen and (min-width: 992px) {
+    /* line 13, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    body {
+      display: block;
+      width: 85%;
+      margin: auto;
+      font-family: 'titel';
+      font-size: 1em;
+      background-color: #4A4037; } }
+
+/* 
+WRAPPER 
+****************************************************************************/
+/* line 40, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  position: relative;
+  background-color: #F4F4F4; }
+  @media screen and (min-width: 755px) {
+    /* line 40, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    .wrapper {
+      margin: auto; } }
+  @media screen and (min-width: 992px) {
+    /* line 40, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    .wrapper {
+      margin: auto; } }
+
+/* 
+HEADER SLIDER 
+****************************************************************************/
+@keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+/* line 86, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+div#slider {
+  overflow: hidden; }
+
+/* line 90, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+div#slider figure img {
+  width: 20%;
+  float: left; }
+  @media screen and (min-width: 992px) {
+    /* line 90, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    div#slider figure img {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; } }
+
+/* line 98, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; }
+
+/* 
+HEADER
+******************************************************************/
+/* line 111, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+header {
+  width: 100%;
+  background-color: #E44D26; }
+  @media screen and (min-width: 755px) {
+    /* line 111, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    header {
+      background-color: #E44D26;
+      width: 100%; } }
+  @media screen and (min-width: 992px) {
+    /* line 111, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    header {
+      width: auto;
+      padding: 0.5em 0.5em 0 0.5em; } }
+
+/* 
+NAVIGATIE 
+****************************************************************************/
+/* line 127, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+nav {
+  width: auto !important;
+  background-color: #E44D26;
+  padding: 2.5px 0;
+  padding-right: 10%;
+  text-align: right; }
+  /* line 133, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav .fa-bars:before {
+    color: #F4F4F4;
+    font-size: 200%;
+    margin-left: 1em;
+    padding-bottom: 1em; }
+  /* line 139, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav ul {
+    display: none;
+    text-align: left; }
+  /* line 143, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav:hover ul {
+    display: block; }
+  /* line 146, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav a {
+    display: block;
+    color: #F4F4F4;
+    font-size: 150%;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 2px 1px;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s; }
+  /* line 156, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav a:last-child {
+    border-bottom: none; }
+  /* line 159, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav li a:hover {
+    color: #4A4037;
+    display: block;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s; }
+  /* line 168, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav li a:active {
+    display: block;
+    color: #F4F4F4;
+    font-size: 150%;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 0.5em 0.5em 0.5em 0.5em; }
+  /* line 176, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav a.current {
+    color: #4A4037;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    cursor: default;
+    font-weight: bold;
+    cursor: default; }
+  /* line 185, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav li {
+    list-style-type: none; }
+  /* line 188, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  @media screen and (min-width: 755px) {
+    /* line 127, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    nav {
+      padding-right: 0%;
+      max-width: 100% !important; }
+      /* line 195, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav .fa-bars {
+        display: none; }
+      /* line 198, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav ul {
+        display: block;
+        text-align: center;
+        padding-left: 0px; }
+      /* line 203, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav ul li {
+        display: inline-block;
+        margin: .15em;
+        font-size: 95%; }
+      /* line 208, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav li a:hover {
+        display: block;
+        width: auto;
+        transition: ease-in-out 0.5s;
+        -moz-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s; }
+      /* line 213, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav li a.current {
+        width: auto; }
+      /* line 216, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      nav #home {
+        display: none; } }
+  @media screen and (min-width: 992px) {
+    /* line 221, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    nav ul li {
+      font-size: 140%; } }
+
+/* 
+SECTION TEKST + LINKEN + FOTO'S
+****************************************************************************/
+/* line 230, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+section {
+  padding-top: 0px;
+  padding-bottom: 2em; }
+  /* line 234, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section h1 {
+    font-variant: small-caps;
+    font-size: 2em;
+    clear: both; }
+  /* line 239, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section p {
+    font-size: 0.9em;
+    font-family: Roboto, Verdana, Arial, sans-serif;
+    color: black;
+    line-height: 1.5em; }
+  /* line 245, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section p img {
+    display: block;
+    height: 200%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 1em 1em 0; }
+  /* line 251, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section a {
+    color: #E44D26;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s; }
+  /* line 256, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section a:hover {
+    color: #E44D26;
+    text-decoration: underline;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s; }
+  /* line 261, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s; }
+  /* line 268, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section figure {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin-right: 1.5em;
+    transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s; }
+  /* line 276, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section article {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2em; }
+  /* line 281, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section .description {
+    text-align: center; }
+  /* line 284, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section #sliders {
+    overflow: hidden; }
+    /* line 286, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders figure {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      margin-right: 1.5em; }
+    /* line 293, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2%;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+  @media screen and (min-width: 755px) {
+    /* line 302, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section p img {
+      float: left; }
+    /* line 305, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section p {
+      font-size: 0.8em; }
+    /* line 308, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section figure img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      filter: gray;
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      transition: ease-in-out 1s;
+      -moz-transition: ease-in-out 1s;
+      -webkit-transition: ease-in-out 1s;
+      -o-transition: ease-in-out 1s; }
+    /* line 318, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section figure img:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+      transition: ease-in-out 1s;
+      -moz-transition: ease-in-out 1s;
+      -webkit-transition: ease-in-out 1s;
+      -o-transition: ease-in-out 1s; }
+    /* line 323, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section figure {
+      float: left;
+      width: 300px;
+      padding: 0 2em 1em 0;
+      margin: 0; }
+    /* line 329, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section figure img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+    /* line 334, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section .description {
+      text-align: left; }
+    /* line 338, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders figure {
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center; }
+    /* line 344, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders img {
+      float: left;
+      width: 50%;
+      margin-bottom: 0%; } }
+  @media screen and (min-width: 992px) {
+    /* line 352, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section p {
+      font-size: 0.9em; }
+    /* line 355, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section .ilink {
+      display: block;
+      width: 50%;
+      height: auto;
+      float: left; }
+      /* line 360, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      section .ilink:nth-child(odd) {
+        clear: both; }
+    /* line 365, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders figure {
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center; }
+    /* line 371, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    section #sliders img {
+      float: left;
+      width: 25%; } }
+
+/* line 379, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.link {
+  min-height: 1600px !important; }
+
+/* line 389, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.home,
+.contact,
+.ik,
+.link,
+.cv,
+.portfolio,
+.talent {
+  font-family: "titel", Verdana, Arial, sans-serif;
+  font-size: 150%;
+  padding-left: 10%;
+  padding-right: 10%;
+  clear: both; }
+
+/* 
+CONTACTFORMULIER 
+****************************************************************************/
+/* line 406, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.voornaam,
+.naam,
+.email,
+.telefoon,
+.onderwerp,
+.bericht,
+.verzend {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  font-size: 100%;
+  padding: 1%;
+  margin: 1%; }
+
+/* line 418, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#fnaam,
+#lnaam,
+#email,
+#telefoon,
+#onderwerp,
+#bericht {
+  display: block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  border: #E44D26 solid 2px;
+  padding: 1%;
+  width: 98%; }
+
+@media screen and (min-width: 992px) {
+  /* line 429, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  .mobile {
+    width: 46%;
+    line-height: 1.5;
+    float: left; } }
+
+@media screen and (min-width: 992px) {
+  /* line 437, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  .email {
+    clear: both; } }
+
+/* line 443, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#bericht {
+  width: 98%;
+  height: 10em; }
+
+/* line 448, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#oefening {
+  display: block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: "titel", Verdana, Arial, sans-serif;
+  color: #F4F4F4;
+  border: none;
+  background-color: #E44D26;
+  padding: 5px 8px; }
+  /* line 458, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  #oefening:hover {
+    -webkit-box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+
+/* line 467, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#verzend,
+#reset {
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: "titel", Verdana, Arial, sans-serif;
+  color: #F4F4F4;
+  border: none;
+  background-color: #E44D26;
+  margin-right: -3px; }
+  /* line 477, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  #verzend:hover,
+  #reset:hover {
+    -webkit-box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+
+/* line 485, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#reset {
+  background-color: gainsboro;
+  color: #4A4037;
+  border-radius: 0 5px 5px 0;
+  margin-left: -3px; }
+
+/* 
+ACCORDEON 
+****************************************************************************/
+/* line 496, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv h2 {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  text-align: left;
+  font-size: 125%;
+  color: #F4F4F4;
+  padding-left: 1em;
+  margin-bottom: 0%; }
+
+/* line 504, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv > h2 {
+  font-family: "titel", Verdana, Arial, sans-serif;
+  font-size: 150%;
+  color: #4A4037; }
+
+/* line 509, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv p {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  margin-top: 14px;
+  z-index: 2;
+  background-color: #F4F4F4;
+  padding: 1em;
+  border: #E44D26 1px solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 0px; }
+
+/* line 524, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul {
+  list-style: none;
+  padding: 1%;
+  margin: 1%; }
+
+/* line 529, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li {
+  position: relative;
+  padding-left: 1em;
+  background-color: #E44D26;
+  padding: 0.2em;
+  margin: 0.2em;
+  border-radius: 5px; }
+
+/* line 537, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i {
+  position: absolute;
+  transform: translate(-30px, 0);
+  margin-top: 30px;
+  right: 0; }
+
+/* line 544, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:before,
+.cv ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #F4F4F4;
+  width: 5px;
+  height: 11px; }
+
+/* line 551, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg); }
+
+/* line 554, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg); }
+
+/* line 557, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0; }
+
+/* line 565, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%); }
+
+/* line 571, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg); }
+
+/* line 574, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg); }
+
+/* 
+FOOTER 
+****************************************************************************/
+/* line 583, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.footer,
+.push {
+  height: -50%;
+  bottom: 0px;
+  background-color: #E44D26;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #F4F4F4;
+  box-shadow: 1px 0 0 #E44D26; }
+
+/* line 594, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.footer td {
+  width: 30%;
+  padding: .5% 2.5% 0.5% 2.5%;
+  margin-top: 2em; }
+
+/* line 600, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+table {
+  text-transform: uppercase; }
+  /* line 602, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table .fa {
+    width: 10%;
+    padding: .4em 0;
+    text-align: center; }
+  /* line 609, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table .fa-facebook,
+  table .fa-linkedin,
+  table .fa-pinterest-p {
+    color: #F4F4F4;
+    align-content: center;
+    transition: all ease-in-out 0.5s; }
+  /* line 614, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table .fa-facebook:hover {
+    background-color: #405D9A;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in-out 1.5s; }
+  /* line 620, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table .fa-linkedin:hover {
+    background-color: #1984BC;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in-out 1.5s; }
+  /* line 626, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table .fa-pinterest-p:hover {
+    background-color: #BD1E23;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in-out 1.5s; }
+  /* line 632, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  table #love {
+    display: none; }
+    /* line 634, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    table #love .fa-heart:hover {
+      color: red;
+      transition: ease-in-out 1s;
+      -moz-transition: ease-in-out 1s;
+      -webkit-transition: ease-in-out 1s;
+      -o-transition: ease-in-out 1s; }
+    @media screen and (min-width: 755px) {
+      /* line 632, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+      table #love {
+        display: inline; }
+        /* line 640, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+        table #love .fa-heart {
+          transition: ease-in-out 1s;
+          -moz-transition: ease-in-out 1s;
+          -webkit-transition: ease-in-out 1s;
+          -o-transition: ease-in-out 1s; } }
+
+/*# sourceMappingURL=site.css.map */

@@ -1,0 +1,35 @@
+h1 {
+    color: coral;
+    font-family: Haettenschweiler, Arial, sans-serif;
+}
+
+body {
+    background-color: crimson;
+    color: #FC6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: coral
+}
+
+a:visited {
+    color: coral
+}
+
+a:hover {
+    color: #FE6
+}
+
+a:active {
+    color: #00F
+}
+
+label {
+    color: coral
+}
+
+.initiaal:first-letter {
+    font-size: 300%;
+    font-style: italic;
+}

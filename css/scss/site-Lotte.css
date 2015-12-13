@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto/Roboto-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Titel';
+  src: url("../../fonts/basictitlefont.ttf"); }
+
+/* BODY */
+/* line 8, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+body,
+html {
+  height: 100%; }
+
+/* line 12, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+body {
+  display: block;
+  width: 100%;
+  font-family: Titel, Verdana, Arial, sans-serif;
+  font-size: 1em;
+  background-color: #F4F4F4; }
+  @media screen and (min-width: 755px) {
+    /* line 12, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    body {
+      display: block;
+      width: 100%;
+      margin: auto;
+      font-family: Titel, Verdana, Arial, sans-serif;
+      font-size: 125%;
+      background-color: #4A4037; } }
+  @media screen and (min-width: 992px) {
+    /* line 12, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    body {
+      display: block;
+      width: 85%;
+      margin: auto;
+      font-family: Titel;
+      font-size: 1em;
+      background-color: #4A4037; } }
+
+/* WRAPPER */
+/* line 39, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -42px;
+  position: relative;
+  position: relative;
+  width: 100%;
+  background-color: #F4F4F4; }
+  @media screen and (min-width: 992px) {
+    /* line 39, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    .wrapper {
+      margin: auto; } }
+
+/* HEADER IMAGE */
+/* line 56, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.header picture #headerimg {
+  display: none; }
+  @media screen and (min-width: 755px) {
+    /* line 56, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    .header picture #headerimg {
+      display: block;
+      width: 100%;
+      height: 98%;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; } }
+  @media screen and (min-width: 992px) {
+    /* line 56, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+    .header picture #headerimg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      -moz-border-radius: 3%;
+      -webkit-border-radius: 3%;
+      border-radius: 3%; } }
+
+/* HEADER */
+/* line 75, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+header {
+  background-color: #F05C38;
+  width: 98%;
+  height: 100%;
+  padding: 1% 1% 0 1%; }
+
+/* NAVIGATIE */
+/* line 86, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+nav ul {
+  text-align: center;
+  background: #F4F4F4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 91, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+nav ul li {
+  display: inline-block;
+  font: Titel, Verdana, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 96, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+nav li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #4A4037; }
+
+/* SECTION TEKST */
+/* line 106, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+section {
+  padding: 1em;
+  min-height: 500px; }
+  /* line 109, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section img {
+    display: block;
+    height: auto;
+    float: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 2em; }
+  /* line 116, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+  section p {
+    font-size: 1em;
+    font-family: Roboto, Verdana, Arial, sans-serif;
+    color: black;
+    line-height: 1.5em;
+    clear: right; }
+
+/* FOOTER */
+/* line 128, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#footer {
+  bottom: 0px;
+  background-color: #F05C38;
+  position: absolute;
+  width: 98%;
+  text-align: left;
+  color: #F4F4F4;
+  padding-top: .5%;
+  padding-left: 2%; }
+
+/* line 140, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#footer,
+.push {
+  height: -40%; }
+
+/* CONTACTFORMULIER */
+/* line 153, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.home,
+.contact,
+.ik,
+.hobby,
+.cv,
+.portfolio,
+.talent {
+  font-family: Titel, Verdana, Arial, sans-serif;
+  font-size: 150%;
+  padding-left: 10%;
+  padding-right: 10%;
+  clear: both; }
+
+/* line 166, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.naam,
+.email,
+.telefoon,
+.onderwerp,
+.bericht,
+.verzend {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  font-size: 100%;
+  padding: 1%;
+  margin: 1%; }
+
+/* line 177, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#naam,
+#email,
+#telefoon,
+#onderwerp,
+#bericht {
+  display: block;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  border: #F05C38 solid 2px;
+  padding: 1%;
+  width: 100%; }
+
+/* line 188, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#bericht {
+  width: 100%;
+  height: 10em; }
+
+/* line 193, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+#verzend {
+  display: block;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: Titel, Verdana, Arial, sans-serif;
+  border: #F05C38 solid 2px;
+  color: #F05C38;
+  font-weight: bold;
+  background-color: white;
+  padding: 1%; }
+
+/* ACCORDEON */
+/* line 210, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv h1 {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  text-align: left;
+  font-size: 125%;
+  color: #F4F4F4;
+  padding-left: 1em;
+  margin-bottom: 0%; }
+
+/* line 218, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv > h1 {
+  font-family: Titel, Verdana, Arial, sans-serif;
+  font-size: 150%;
+  color: #4A4037; }
+
+/* line 223, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv p {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  margin-top: 14px;
+  z-index: 2;
+  background-color: #F4F4F4;
+  padding: 1em;
+  border: #F05C38 1px solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 0px; }
+
+/* line 238, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul {
+  list-style: none;
+  padding: 1%;
+  margin: 1%; }
+
+/* line 243, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li {
+  position: relative;
+  padding-left: 1em;
+  background-color: #F05C38;
+  padding: 0.2em;
+  margin: 0.2em;
+  border-radius: 5px; }
+
+/* line 251, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i {
+  position: absolute;
+  transform: translate(-30px, 0);
+  margin-top: 30px;
+  right: 0; }
+
+/* line 258, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:before,
+.cv ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #F4F4F4;
+  width: 5px;
+  height: 11px; }
+
+/* line 265, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg); }
+
+/* line 268, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg); }
+
+/* line 271, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0; }
+
+/* line 279, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%); }
+
+/* line 285, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg); }
+
+/* line 288, C:/Users/Lotte/OneDrive/HoGent/Webapplicaties 1/Portfolio/css/scss/site.scss */
+.cv ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg); }
+
+/*# sourceMappingURL=site.css.map */
